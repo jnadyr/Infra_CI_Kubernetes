@@ -1,6 +1,8 @@
 module "eks" {
   source = "terraform-aws-modules/eks/aws"
 
+  version = "~> 20.0" # Adicione ou atualize para uma versão recente # adicionado com ajuda da IA por JNOD
+
   cluster_name                    = var.cluster_name
   cluster_version                 = "1.24"
   cluster_endpoint_public_access  = true
