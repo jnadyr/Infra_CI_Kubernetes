@@ -1,10 +1,10 @@
 module "eks" {
   source = "terraform-aws-modules/eks/aws"
 
-  version = ">= 4.47.0" # Adicione ou atualize para uma versão recente # adicionado com ajuda da IA por JNOD
+#  version = ">= 4.47.0" # Adicione ou atualize para uma versão recente # adicionado com ajuda da IA por JNOD
 
-  cluster_name                    = var.cluster_name
-  cluster_version                 = "1.24"
+#  cluster_name                    = var.cluster_name
+#  cluster_version                 = "1.24"
   cluster_endpoint_public_access  = true
 
   vpc_id     = module.vpc.vpc_id
